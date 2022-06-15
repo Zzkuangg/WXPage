@@ -1,0 +1,17 @@
+<!--pages/detail/detail.wxml-->
+<loading hidden="{{load}}">加载中</loading>
+
+<view class="rooms">
+  <view class="thumb">
+    <image src="{{show.f_img}}"></image>
+  </view>
+  <view class="info">
+    <text>设备: {{show.f_name}}</text>
+    <text>品牌: {{show.f_band}}</text>
+    <text>状态: {{state}}</text>
+  </view>
+</view>
+
+<view class="charts">
+  <canvas canvas-id="vHVCJiWzCeWTzCEAAJFvUHiJPmuRqDrF" id="vHVCJiWzCeWTzCEAAJFvUHiJPmuRqDrF" class="charts" bindtouchend="tap"/>
+</view>

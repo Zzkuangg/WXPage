@@ -1,0 +1,13 @@
+<!--pages/facilities/facilities.wxml-->
+<loading hidden="{{load}}">加载中</loading>
+<view wx:for="{{show}}" wx:key="index" class="rooms" bindtap="goDetail" data-id="{{item.identify}}">
+  
+  <view class="thumb">
+    <image src="{{item.f_img}}"></image>
+  </view>
+  <view class="info">
+    <view>设备: {{item.f_name}}</view>
+    <view>ID:  {{item.identify}}</view>
+    <view>品牌: {{item.f_band}}</view>
+  </view>
+</view>

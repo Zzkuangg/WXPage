@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/room/room",
+    "pages/logs/logs",
+    "pages/settings/settings",
+    "pages/facilities/facilities",
+    "pages/detail/detail",
+    "pages/sets/sets",
+    "pages/usr/usr",
+    "pages/manage/manage"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ECEAEC",
+    "navigationBarTitleText": "非侵入式监测系统",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#DDDBDD"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/room/room",
+        "text": "房间",
+        "iconPath": "/img/room.png",
+        "selectedIconPath": "/img/room_click.png"
+      },{
+        "pagePath": "pages/settings/settings",
+        "text": "管理",
+        "iconPath": "/img/setting.png",
+        "selectedIconPath": "/img/setting_click.png"
+      },{
+        "pagePath": "pages/usr/usr",
+        "text": "我的",
+        "iconPath": "/img/usr.png",
+        "selectedIconPath": "/img/usr_click.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+
+}

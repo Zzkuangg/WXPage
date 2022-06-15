@@ -1,0 +1,29 @@
+/* pages/detail/detail.wxss */
+/* pages/facilities/facilities.wxss */
+.rooms{
+  display: flex;
+  padding: 15rpx;
+  border: 1rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 15rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+.thumb image {
+  width:160rpx;
+  height: 150rpx;
+  display: block;
+  margin-right: 15rpx;
+  border: 1rpx solid #efefef;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+.info {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 24rpx;
+}
+.charts {
+  width: 750rpx;
+  height: 500rpx;
+}

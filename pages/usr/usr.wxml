@@ -1,0 +1,65 @@
+<!--pages/usr/usr.wxml-->
+<view class="bg">
+  <view class="head">
+    <view class="headIcon">
+      {{user_data.u_name}}
+    </view>
+    <view class="login" wx:if="{{user_data.u_prior<=1}}">管理员，您好</view>
+    <view class="login" wx:if="{{user_data.u_prior==2}}">您好</view>
+  </view>
+</view>
+
+<view class="hr"></view>
+<view class='item' bindtap="goManage" data-id="0">
+  <view class="title">信息修改</view>
+  <view class="detail2">
+    <text>></text>
+  </view>
+</view>
+<view class="line"></view>
+
+<!-- <view class='item'>
+  <view class="title">阅读文章</view>
+  <view class="detail2">
+    <text>></text>
+  </view>
+</view> -->
+
+<view class="hr"></view>
+<view class='item' bindtap="goManage" data-id="1">
+  <view class="title" >用户添加</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+<view class="line"></view>
+<view class="item" bindtap="goManage" data-id="2">
+  <view class="title" >用户管理</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+<view class="line"></view>
+<view class="item" bindtap="goManage" data-id="3">
+  <view class="title" >用户删除</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+<view class="line"></view>
+<view class="item" bindtap="goManage" data-id="4">
+  <view class="title">设置</view>
+  <view class="detail2">
+    <text> ></text>
+  </view>
+</view>
+
+<view class="hr"></view>
+
+<view class='item' bindtap="bindViewTap">
+  <view class="title" style="text-align: center;">退出登录</view>
+  <view class="detail2">
+    <text>></text>
+  </view>
+</view>
+

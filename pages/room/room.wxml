@@ -1,0 +1,12 @@
+<!--pages/room/room.wxml-->
+<loading hidden="{{load}}">加载中</loading>
+<view wx:for="{{roomS}}" wx:key="index" class="rooms" bindtap="goFaciliy" data-id="{{item.identify}}" data-name="{{item.r_id}}">
+  
+  <view class="thumb">
+    <image src="{{item.r_img}}"></image>
+  </view>
+  <view class="info">
+      <view>房间名: {{item.r_id}}</view>
+      <view>类型: {{item.r_name}}</view>
+  </view>
+</view>

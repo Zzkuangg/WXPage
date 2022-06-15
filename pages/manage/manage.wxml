@@ -1,0 +1,112 @@
+<!--pages/manage/manage.wxml-->
+<block wx:if="{{target==1}}">
+<view class="wall">
+<view style="text-align: center;font-size: 40rpx; line-height: 40rpx; margin-top: 10rpx;">添加用户</view>
+<form bindsubmit="addUsr">
+<view class="one-piece">
+<view class="lbel">用户名:</view>
+  <view class="ipt-area">
+    <input class="weui-input" type="text" name="u_name" />
+  </view>
+</view>
+
+<view class="one-piece">
+<view class="lbel">密码:</view>
+  <view class="ipt-area">
+    <input class="weui-input" type="text" name="u_pwd" />
+  </view>
+</view>
+
+<view class="one-piece">
+<view class="lbel">重复输入:</view>
+  <view class="ipt-area">
+    <input class="weui-input" type="text" name="u_pwd1" />
+  </view>
+</view>
+
+<view class="one-piece">
+<view class="lbel">权限:</view>
+<picker bindchange="bindPickChange" value="{{index}}" range="{{prior}}">
+<view class="selection">
+ {{prior[index]}}
+</view>
+</picker>
+</view>
+
+
+<view class="btn-area">
+  <button type="primary" formType="submit">添加</button>
+</view>
+</form>
+</view>
+</block>
+<!--***************************************************************************-->
+<block wx:if="{{target==2}}">
+<view class="wall">
+<view style="text-align: center;font-size: 40rpx; line-height: 40rpx; margin-top: 10rpx;">用户管理</view>
+<form bindsubmit="addUsr">
+<view class="one-piece">
+<view class="lbel">用户名:</view>
+  <view class="ipt-area">
+    <input class="weui-input" type="text" name="u_name" />
+  </view>
+</view>
+
+<view class="one-piece">
+<view class="lbel">密码:</view>
+  <view class="ipt-area">
+    <input class="weui-input" type="text" name="u_pwd" />
+  </view>
+</view>
+
+<view class="one-piece">
+<view class="lbel">重复输入:</view>
+  <view class="ipt-area">
+    <input class="weui-input" type="text" name="u_pwd1" />
+  </view>
+</view>
+
+<view class="one-piece">
+<view class="lbel">权限:</view>
+<picker bindchange="bindPickChange" value="{{index}}" range="{{prior}}">
+<view class="selection">
+ {{prior[index]}}
+</view>
+</picker>
+</view>
+
+
+<view class="btn-area">
+  <button type="primary" formType="submit">添加</button>
+</view>
+</form>
+</view>
+</block>
+
+<!--***************************************************************************-->
+<block wx:if="{{target==3}}">
+<view class="wall">
+<view style="text-align: center;font-size: 40rpx; line-height: 40rpx; margin-top: 10rpx;">用户删除</view>
+<view style="margin: 30rpx;">
+</view>
+<view class="one-piece">
+<view class="del-show">用户ID</view>
+<view class="del-show">用户名</view>
+<view class="del-show">权限</view>
+<view class="del-show">操作</view>
+
+<view wx:for="{{usrs}}" wx:key="index">
+<view class="del-item">{{item.u_id}}</view>
+<view class="del-item">{{item.u_name}}</view>
+<view class="del-item" wx:if="{{item.u_prior==0}}">root</view>
+<view class="del-item" wx:if="{{item.u_prior==1}}">管理员</view>
+<view class="del-item" wx:if="{{item.u_prior==2}}">用户</view>
+<view class="del-btn" bindtap="delUsr" data-id="{{index}}">删除</view>
+</view>
+</view>
+
+
+
+</view>
+</block>
+

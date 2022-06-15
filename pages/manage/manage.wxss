@@ -1,0 +1,75 @@
+/* pages/sets/sets.wxss */
+.ipt-area{
+  width: 400rpx;
+  display: flex;
+  padding: 15rpx;
+  border: 1rpx solid #efefef;
+  border-radius: 8rpx;
+  margin: 15rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+.lbel{
+  float: left;
+  /* border: 1rpx solid red; */
+  margin: 15rpx;
+  padding-top: 5rpx;
+  width: 150rpx;
+  text-align: center;
+  line-height: 35rpx;
+  font-size: 35rpx;
+}
+.btn-area{
+  margin: auto;
+}
+.one-piece{
+  margin: 25rpx auto;
+  padding-left:10rpx;
+  
+}
+
+.wall{
+  margin:30rpx;
+  border: 1rpx solid grey;
+  border-radius: 30rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+
+
+.selection{
+  display: inline-block;
+  font-size: 35rpx;
+  padding: 12rpx;
+  margin: 15rpx;
+  color: green;
+  margin-top: 8rpx;
+}
+.del-btn{
+  display:inline-block;
+  border: 1rpx solid grey;
+  height: 50rpx;
+  width: 24%;
+  line-height: 50rpx;
+  text-align: center;
+  color: blue;
+}
+.del-item{
+  display:inline-block;
+  border: 1rpx solid grey;
+  height: 50rpx;
+  width: 24%;
+  color:gray;
+  line-height: 50rpx;
+  text-align: center;
+}
+
+.del-show{
+
+  display:inline-block;
+  border: 1rpx solid grey;
+  height: 50rpx;
+  width: 24%;
+  line-height: 50rpx;
+  text-align: center;
+}
